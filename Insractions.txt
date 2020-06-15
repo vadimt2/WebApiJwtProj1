@@ -1,0 +1,21 @@
+Instructions:
+Run: Add-Migration
+then Run: update-database
+Lunch postman: (HTTP POST)
+http://localhost:61307/Users/Register
+  {
+    "Email" : "vadimt2@gmail.com",
+    "Password": "1234",
+    "RoleId" : 1
+    }
+Then Login:
+http://localhost:61307/Users/Login
+  {
+    "Email" : "vadimt2@gmail.com",
+    "Password": "1234"
+  }
+Copy the token from the response
+The get the data(HTTP GET)
+http://localhost:61307/weatherforecast
+Authorization -> Bearer Token -> Paste the token
+now you will see the data as the admin
