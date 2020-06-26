@@ -101,7 +101,7 @@ namespace WebApiJwtProj1
 
             app.UseSwaggerUI(ui =>
             {
-                ui.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Book Stores API Endpoint");
+                ui.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Vadim API");
             });
 
             app.UseEndpoints(endpoints =>
